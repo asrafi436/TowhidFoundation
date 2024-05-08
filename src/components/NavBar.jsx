@@ -1,107 +1,103 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { BsList } from 'react-icons/bs'; // Import menu icon from react-icons/bs
-import { FaUser, FaSignInAlt } from 'react-icons/fa'; // Import user and sign-in icons from react-icons/fa
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { TiThMenu } from "react-icons/ti";
 
-export const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-800 py-4">
+    <nav className="bg-white py-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo and Company Name */}
+        {/* Company Logo and Name */}
         <div className="flex items-center">
-          <img src="/company-logo.png" alt="Company Logo" className="h-10 mr-4" />
-          <h1 className="text-white text-lg font-semibold">Company Name</h1>
+          <img src="/path-to-your-logo.png" alt="logo" className="h-10 mr-4" />
+          <h1 className="text-blue-600 text-lg font-bold">Towhid Foundation</h1>
         </div>
 
-        {/* Menu Icon (visible on mobile) */}
-        <div className="block md:hidden">
+        {/* Hamburger Menu Icon for Small Screens */}
+        <div className="block lg:hidden">
           <button
-            onClick={toggleMenu}
-            className="text-white hover:text-gray-300 focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-blue-600 hover:text-blue-800 focus:outline-none"
           >
-            <BsList className="w-6 h-6" /> {/* Menu Icon from react-icons/bs */}
+            <TiThMenu className="w-8 h-8" />
           </button>
         </div>
 
-        {/* Navigation Links (visible on tablet/desktop) */}
-        <ul className="md:flex md:flex-wrap justify-center items-center hidden md:block w-full md:w-auto">
-          <li className="my-2 md:my-0">
-            <Link to="/" className="text-white hover:text-gray-300 px-4 py-2 block">
+        {/* Navigation Links (responsive) */}
+        <ul
+          className={`lg:flex lg:items-center lg:space-x-4 ${
+            isOpen ? "block" : "hidden"
+          } mt-4 lg:mt-0`}
+        >
+          <li>
+            <Link to="/" className="text-blue-600 hover:text-blue-800">
               Home
             </Link>
           </li>
-          <li className="my-2 md:my-0">
-            <Link to="/services" className="text-white hover:text-gray-300 px-4 py-2 block">
-              Services
-            </Link>
-          </li>
-          <li className="my-2 md:my-0">
-            <Link to="/about-us" className="text-white hover:text-gray-300 px-4 py-2 block">
+          <li>
+            <Link to="/about-us" className="text-blue-600 hover:text-blue-800">
               About Us
             </Link>
           </li>
-          <li className="my-2 md:my-0">
-            <Link to="/notice" className="text-white hover:text-gray-300 px-4 py-2 block">
-              Notice
-            </Link>
-          </li>
-          <li className="my-2 md:my-0">
-            <Link to="/news-update" className="text-white hover:text-gray-300 px-4 py-2 block">
-              News & Updates
-            </Link>
-          </li>
-        </ul>
-
-        {/* Login & Signup (visible on tablet/desktop) */}
-        <div className="hidden md:flex items-center">
-          <Link to="/login" className="text-white hover:text-gray-300 px-4 py-2">
-            <FaUser className="w-6 h-6 mr-1" /> {/* User Icon from react-icons/fa */}
-            Login
-          </Link>
-          <Link to="/signup" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg ml-4">
-            <FaSignInAlt className="w-6 h-6 mr-1" /> {/* Sign In Icon from react-icons/fa */}
-            Sign Up
-          </Link>
-        </div>
-
-        {/* Overlay Menu (visible on mobile) */}
-        {isMenuOpen && (
-          <div className="md:hidden w-full bg-gray-800 py-2">
-            <ul className="text-white text-center">
+          {/* Services Link with Dropdown */}
+          <li className="relative group">
+            <span className="text-blue-600 cursor-pointer hover:text-blue-800">
+              Services
+            </span>
+            {/* Nested Services Menu */}
+            <ul className="absolute bg-white text-gray-800 py-1 rounded-md shadow-md left-0 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
               <li>
-                <Link to="/" className="block py-2">
-                  Home
+                <Link
+                  to="/services/education"
+                  className="block px-4 py-2 hover:bg-blue-200 hover:text-blue-900"
+                >
+                  Education
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="block py-2">
-                  Services
+                <Link
+                  to="/services/medical"
+                  className="block px-4 py-2 hover:bg-green-200 hover:text-green-900"
+                >
+                  Medical Service
                 </Link>
               </li>
               <li>
-                <Link to="/about-us" className="block py-2">
-                  About Us
+                <Link
+                  to="/services/ambulance"
+                  className="block px-4 py-2 hover:bg-blue-200 hover:text-blue-900"
+                >
+                  Ambulance Service
                 </Link>
               </li>
               <li>
-                <Link to="/notice" className="block py-2">
-                  Notice
-                </Link>
-              </li>
-              <li>
-                <Link to="/news-update" className="block py-2">
-                  News & Updates
+                <Link
+                  to="/services/others"
+                  className="block px-4 py-2 hover:bg-green-200 hover:text-green-900"
+                >
+                  Other Services
                 </Link>
               </li>
             </ul>
-          </div>
-        )}
+          </li>
+          {/* Other Navigation Links */}
+          <li>
+            <Link to="/stuff" className="text-blue-600 hover:text-blue-800">
+              Stuff
+            </Link>
+          </li>
+          <li>
+            <Link to="/login" className="text-blue-600 hover:text-blue-800">
+              Login
+            </Link>
+          </li>
+          <li>
+            <Link to="/register" className="text-blue-600 hover:text-blue-800">
+              Register
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );
