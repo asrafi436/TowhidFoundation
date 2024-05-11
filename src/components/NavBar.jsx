@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { TiThMenu } from "react-icons/ti";
 
-const NavBar = () => {
+export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -83,18 +83,18 @@ const NavBar = () => {
           </li>
           {/* Other Navigation Links */}
           <li>
-            <Link to="/stuff" className="text-blue-600 hover:text-blue-800">
-              Stuff
+            <Link to="/activities" className="text-blue-600 hover:text-blue-800">
+              Activities
+            </Link>
+          </li>
+          <li>
+            <Link to="/Notice" className="text-blue-600 hover:text-blue-800">
+              Notices
             </Link>
           </li>
           <li>
             <Link to="/login" className="text-blue-600 hover:text-blue-800">
               Login
-            </Link>
-          </li>
-          <li>
-            <Link to="/register" className="text-blue-600 hover:text-blue-800">
-              Register
             </Link>
           </li>
         </ul>
