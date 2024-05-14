@@ -4,14 +4,13 @@ import { TiThMenu } from "react-icons/ti";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const tfLogo = "https://towhidfoundation.com/wp-content/uploads/2023/12/Towhid-Foundation-Bangla-Logo-copy-01.svg";
   return (
     <nav className="bg-white py-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         {/* Company Logo and Name */}
         <div className="flex items-center">
-          <img src="/path-to-your-logo.png" alt="logo" className="h-10 mr-4" />
-          <h1 className="text-blue-600 text-lg font-bold">Towhid Foundation</h1>
+          <img src={tfLogo} alt="logo" className="h-10 mr-4" />
         </div>
 
         {/* Hamburger Menu Icon for Small Screens */}
