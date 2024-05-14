@@ -46,11 +46,11 @@ export const NavBar = () => {
               Services
             </span>
             {/* Nested Services Menu */}
-            <ul className="absolute bg-white text-gray-800 py-1 rounded-md shadow-md left-0 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+            <ul className="absolute bg-white z-10  text-gray-800 py-1 rounded-md shadow-md left-0 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
               <li>
                 <Link
                   to="/services/education"
-                  className="block px-4 py-2 hover:bg-blue-200 hover:text-blue-900"
+                  className="block px-4 py-2 hover:bg-blue-300 hover:text-blue-900"
                 >
                   Education
                 </Link>
@@ -58,7 +58,7 @@ export const NavBar = () => {
               <li>
                 <Link
                   to="/services/medical"
-                  className="block px-4 py-2 hover:bg-green-200 hover:text-green-900"
+                  className="block px-4 py-2 hover:bg-green-300 hover:text-green-900"
                 >
                   Medical Service
                 </Link>
@@ -66,7 +66,7 @@ export const NavBar = () => {
               <li>
                 <Link
                   to="/services/ambulance"
-                  className="block px-4 py-2 hover:bg-blue-200 hover:text-blue-900"
+                  className="block px-4 py-2 hover:bg-blue-300 hover:text-blue-900"
                 >
                   Ambulance Service
                 </Link>
@@ -74,7 +74,7 @@ export const NavBar = () => {
               <li>
                 <Link
                   to="/services/others"
-                  className="block px-4 py-2 hover:bg-green-200 hover:text-green-900"
+                  className="block px-4 py-2 hover:bg-green-300 hover:text-green-900"
                 >
                   Other Services
                 </Link>

@@ -1,8 +1,12 @@
 import React from "react";
 
-
 export const Home = () => {
-  const heroImage = 'https://www.aclu.org/wp-content/uploads/2023/09/education-equity-blog.jpg';
+  const images = [
+    "https://www.aclu.org/wp-content/uploads/2023/09/education-equity-blog.jpg",
+    "https://www.aclu.org/wp-content/uploads/2023/09/education-equity-blog.jpg",
+    "https://www.aclu.org/wp-content/uploads/2023/09/education-equity-blog.jpg",
+    "https://www.aclu.org/wp-content/uploads/2023/09/education-equity-blog.jpg",
+  ];
 
   return (
     <header className="bg-blue-500 py-20">
@@ -18,11 +22,21 @@ export const Home = () => {
             Get Started
           </button>
         </div>
-        <div className="md:w-1/2">
-          <img src={heroImage} alt="NGO" className="w-full h-auto rounded-md shadow-lg" />
+        <div className="md:w-1/2 grid grid-cols-2 gap-4">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="relative p-4 bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105"
+            >
+              <img
+                src={image}
+                alt={`Image ${index + 1}`}
+                className="w-full h-auto rounded-md"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </header>
   );
 };
-
