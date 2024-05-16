@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { TiThMenu } from "react-icons/ti";
 
 export const NavBar = () => {
+  
   const [isOpen, setIsOpen] = useState(false);
   const tfLogo = "https://towhidfoundation.com/wp-content/uploads/2023/12/Towhid-Foundation-Bangla-Logo-copy-01.svg";
   return (
