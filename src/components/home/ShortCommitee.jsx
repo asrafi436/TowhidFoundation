@@ -41,11 +41,11 @@ export const ShortCommitee = () => {
     },
   ];
   return (
-    <div>
+    <div className="m-2 flex flex-col justify-content-center">
       <h3 className=" my-0 p-1 w-full font-bold bg-[#0095FF] leading-tight text-center text-white rounded-md">
         Committee Members :
       </h3>
-      <div className="text-center my-4 flex flex-row md:flex-col justify-center items-center gap-9">
+      <div className="text-center my-4 flex flex-row md:flex-col justify-center items-center gap-8">
         {commiteeImg
           .filter((item) => item.uid === 1 || item.uid === 2)
           .map((item) => (
@@ -64,7 +64,7 @@ export const ShortCommitee = () => {
             </div>
           ))}
       </div>
-      <button className="btn text-blue-500 py-1 px-2 rounded-md">
+      <button className="btn bg-teal-400 text-black py-1 px-2 my-4 rounded-md">
         View All Committee Members...
       </button>
     </div>
