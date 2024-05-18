@@ -3,6 +3,7 @@ import { Hero } from "../components/home/Hero";
 import ServicesIcon from "../components/home/ServicesIcon";
 import { LeftAside, RightAside } from "../components/home/aside";
 import { CenterHome } from "../components/home/CenterHome";
+import { ShortTraining } from "../components/home/ShortTraining";
 
 
 
@@ -26,6 +27,7 @@ export const Home = () => {
 
       <aside className="md:col-span-3 col-span-6 p-1 m-1 flex flex-col items-center justify-items-center ">
         <RightAside/>
+        <ShortTraining/>
       </aside>
 
      </section>

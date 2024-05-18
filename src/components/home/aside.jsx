@@ -3,7 +3,7 @@ import { ShortNotice } from "./ShortNotice";
 
 export const LeftAside = () => {
  return(
-  <div>
+  <div className="m-0 p-0">
     <ShortCommitee />
   </div>
  )
