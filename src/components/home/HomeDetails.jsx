@@ -3,7 +3,7 @@ import React from "react";
 export const HomeDetails = () => {
   return (
     <div className="flex justify-center items-center  bg-gray-100 text-justify">
-      <div className="max-w-6xl p-4 bg-white rounded-lg shadow-md ">
+      <div className="max-w-6xl p-4 bg-white rounded-lg shadow-md">
         <h2 className="text-3xl font-bold text-teal-500 mb-4 text-center">
           About Towhid Foundation
         </h2>

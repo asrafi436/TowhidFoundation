@@ -31,17 +31,20 @@ export const Home = () => {
         </aside>
 
         <div className="md:col-span-7 col-span-6 py-8 px-2">
+
+          <div className="h-[160vh] overflow-y-auto">
           <img src={festival} alt="" className="w-full" />
           <HomeDetails />
+          </div> 
           <Reviews />
         </div>
 
         <aside className="md:col-span-3 col-span-6 p-1 m-1 flex flex-col items-center justify-items-center ">
           <div className="bg-red-100">
             <div className="flex flex-row gap-5 items-center justify-content-center">
-              <img src={callNow} alt="" className="h-20" />
-              <img src={cleaning} alt="" className="h-20" />
-              <img src={medical} alt="" className="h-20" />
+              <img src={callNow} alt="" className="w-20" />
+              <img src={cleaning} alt="" className="w-20" />
+              <img src={medical} alt="" className="w-20" />
             </div>
             <h3 className="text-center bg-red-600 text-white my-2">
               To Get Our Ambulance Service, Free Dead Body Cleaning Service &
