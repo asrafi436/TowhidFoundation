@@ -12,7 +12,7 @@ export const Hero = () => {
     
       
       return (
-        <header className="bg-blue-500 py-20">
+        <header className="bg-blue-600 py-20">
           <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 lg:px-8">
             <div className="md:w-1/2 md:text-left text-center mb-8 md:mb-0">
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4">

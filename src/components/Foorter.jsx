@@ -10,28 +10,26 @@ export const Footer = () => {
     "https://towhidfoundation.com/wp-content/uploads/2023/12/Towhid-Foundation-Bangla-Logo-copy-01.svg";
   return (
     <footer className="footer">
-      <div className="footer__container min-h-80 bg-teal-500 w-full flex flex-col md:flex-row justify-between items-center gap-1">
+      <div className="footer__container min-h-80 bg-teal-500 w-full flex flex-row justify-between items-center gap-1">
         
         <div className="footer__logo p-4 flex flex-col justify-center items-center text-md font-semibold">
-          <img src={footerImg} alt="logo" className="h-20 mr-4 shadow-md" />
+          <img src={footerImg} alt="logo" className="h-40 md:h-20 shadow-md" />
           <br />
           <p className="text-center text-lg">All our activities are only for the service of humanity.</p>
         </div>
 
-        
-
-        <div className="p-4 flex flex-col">
+        <div className="md:p-4 flex flex-col">
 
           <div className="flex flex-col justify-center items-center">
-          <h3 className="text-white font-bold py-2 px-4 rounded text-lg">
+          <h3 className="text-white font-bold md:py-2 md:px-4 rounded text-lg">
             Important Link:
           </h3>
-          <a href="#" className=" hover:bg-white p-2  rounded-md">Privacy Policy</a>
-          <a href="#" className=" hover:bg-white p-2 rounded-md">Terms of Service</a>
-          <a href="#" className=" hover:bg-white p-2  rounded-md">Help</a>
-          <a href="#" className=" hover:bg-white p-2 rounded-md">FAQ</a>
-          <a href="#" className=" hover:bg-white p-2  rounded-md">It Team</a>
-          <a href="#" className=" hover:bg-white p-2 rounded-md">Careers</a>
+          <a href="#" className=" hover:bg-white px-2  rounded-md">Privacy Policy</a>
+          <a href="#" className=" hover:bg-white px-2 rounded-md">Terms of Service</a>
+          <a href="#" className=" hover:bg-white px-2  rounded-md">Help</a>
+          <a href="#" className=" hover:bg-white px-2 rounded-md">FAQ</a>
+          <a href="#" className=" hover:bg-white px-2  rounded-md">It Team</a>
+          <a href="#" className=" hover:bg-white px-2 rounded-md">Careers</a>
           </div>
 
           <div className="footer__social p-4 flex flex-row gap-2">
@@ -62,12 +60,12 @@ export const Footer = () => {
         </div>
         </div>
 
-        <div className="footer__contact p-4 flex flex-col gap-1">
+        <div className="footer__contact md:p-4 flex flex-col gap-1">
           <h3 className="text-white font-bold py-2 px-4 text-lg rounded text-center">
             Contact Us:
           </h3>
 
-          <div className="flex flex-row  gap-2 border-b-2 p-1">
+          <div className="flex flex-col md:flex-row  gap-2 border-b-2 p-1">
             <div className="border-2 p-2 rounded-md bg-teal-200 hover:bg-slate-100 shadow-md">
               <h3>Head Office</h3>
               <p>Email: XXXXXXXXXXXXXXXXXXXXXXXXX</p>

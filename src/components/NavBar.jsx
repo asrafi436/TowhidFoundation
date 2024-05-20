@@ -31,7 +31,7 @@ export const NavBar = () => {
           } mt-4 lg:mt-0`}
         >
           <li>
-            <Link to="/" className="text-blue-600 hover:text-blue-800">
+            <Link to="/home" className="text-blue-600 hover:text-blue-800">
               Home
             </Link>
           </li>
@@ -43,7 +43,7 @@ export const NavBar = () => {
           {/* Services Link with Dropdown */}
           <li className="relative group">
             <span className="text-blue-600 cursor-pointer hover:text-blue-800">
-              Services
+              <Link to="/services">Services</Link>
             </span>
             {/* Nested Services Menu */}
             <ul className="absolute bg-white z-10  text-gray-800 py-1 rounded-md shadow-md left-0 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -73,7 +73,7 @@ export const NavBar = () => {
               </li>
               <li>
                 <Link
-                  to="/services/others"
+                  to="/services/others-services"
                   className="block px-4 py-2 hover:bg-green-300 hover:text-green-900"
                 >
                   Other Services
@@ -88,7 +88,7 @@ export const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/Notice" className="text-blue-600 hover:text-blue-800">
+            <Link to="/notice" className="text-blue-600 hover:text-blue-800">
               Notices
             </Link>
           </li>
