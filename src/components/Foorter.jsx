@@ -55,9 +55,37 @@ export const Footer = () => {
           </div>
         </div>
 
-        <h5 className=" bg-teal-200 hover:bg-slate-100 rounded-lg shadow-md text-center m-auto">
-          ©2023 All right reserved by Towhid Foundation
-        </h5>
+        <div className="flex flex-col md:flex-row justify-center items-center m-auto gap-3">
+          <h5 className=" bg-teal-200 hover:bg-slate-100 rounded-lg shadow-md text-center m-auto">
+            ©2023 All right reserved by Towhid Foundation
+          </h5>
+          <div className="footer__social flex flex-row justify-center items-center gap-1 m-auto">
+            <a
+              href="https://www.facebook.com/your-facebook-page"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-blue-500 hover:bg-blue-100 w-fit py-4 px-4 rounded-full shadow-md focus:outline-none focus:shadow-outline flex items-center"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://www.facebook.com/groups/your-facebook-group"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-blue-500 hover:bg-blue-100 w-fit py-4 px-3 rounded-full shadow-md focus:outline-none focus:shadow-outline flex items-center"
+            >
+              <FaUsers className="mr-2" />
+            </a>
+            <a
+              href="https://www.google.com/maps/place/your-location"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-blue-500 hover:bg-blue-100 w-fit py-4 px-3 rounded-full shadow-md focus:outline-none focus:shadow-outline flex items-center"
+            >
+              <FaMapMarkerAlt className="mr-2" />
+            </a>
+          </div>
+        </div>
       </div>
 
       <div className="text-center flex flex-col justify-center items-center m-auto">
@@ -82,33 +110,6 @@ export const Footer = () => {
           </a>
           <a href="#" className="hover:bg-white rounded-md p-1">
             Careers
-          </a>
-        </div>
-
-        <div className="footer__social flex flex-row justify-center items-center gap-1 mt-4">
-          <a
-            href="https://www.facebook.com/your-facebook-page"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-blue-500 hover:bg-blue-100 w-fit py-4 px-4 rounded-full shadow-md focus:outline-none focus:shadow-outline flex items-center"
-          >
-            <FaFacebookF />
-          </a>
-          <a
-            href="https://www.facebook.com/groups/your-facebook-group"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-blue-500 hover:bg-blue-100 w-fit py-4 px-3 rounded-full shadow-md focus:outline-none focus:shadow-outline flex items-center"
-          >
-            <FaUsers className="mr-2" />
-          </a>
-          <a
-            href="https://www.google.com/maps/place/your-location"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-blue-500 hover:bg-blue-100 w-fit py-4 px-3 rounded-full shadow-md focus:outline-none focus:shadow-outline flex items-center"
-          >
-            <FaMapMarkerAlt className="mr-2" />
           </a>
         </div>
       </div>
