@@ -24,22 +24,22 @@ export const Home = () => {
       <Hero />
       <ServicesIcon />
 
-      <section className="grid md:grid-cols-12 grid-cols-6 gap-4">
-        <aside className="md:col-span-2 col-span-6 p-4">
+      <section className="grid md:grid-cols-12 grid-cols-6 gap-4 ">
+        <aside className="md:col-span-2 col-span-6 p-4 md:mt-60">
           <ShortCommitee />
           <ShortTraining />
         </aside>
 
         <div className="md:col-span-7 col-span-6 py-8 px-2">
-
-          <div className="h-[160vh] overflow-y-auto">
+        {/* h-[160vh] overflow-y-auto */}
+          <div className=" mt-10">
           <img src={festival} alt="" className="w-full" />
           <HomeDetails />
           </div> 
           <Reviews />
         </div>
 
-        <aside className="md:col-span-3 col-span-6 p-1 m-1 flex flex-col items-center justify-items-center ">
+        <aside className="md:col-span-3 col-span-6 p-1 m-1 flex flex-col items-center justify-items-center md:mt-40">
           <div className="bg-red-100">
             <div className="flex flex-row gap-5 items-center justify-content-center">
               <img src={callNow} alt="" className="w-20" />

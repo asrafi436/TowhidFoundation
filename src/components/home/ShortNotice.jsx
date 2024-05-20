@@ -45,7 +45,7 @@ export const ShortNotice = () => {
       );
     
       return (
-        <div className="m-0 p-0">
+        <div className="md:mt-10">
           <h3 className="text-1xl my-1 p-4 md:text-2xl lg:text-3xl font-bold bg-[#0095FF] leading-tight text-center text-white">
             Notice :
           </h3>

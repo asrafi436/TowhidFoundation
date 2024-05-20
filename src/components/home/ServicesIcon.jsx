@@ -29,7 +29,7 @@ export default function ServicesIcon() {
       ];
       
   return (
-    <section className="flex md:flex-row flex-col items-center justify-center">
+    <section className="flex md:flex-row flex-col items-center justify-center md:mt-8">
       {
         services.map((service, index) => (
           <div key={index} className="flex items-center justify-center w-full  m-2 p-2 bg-white rounded-lg shadow-md">

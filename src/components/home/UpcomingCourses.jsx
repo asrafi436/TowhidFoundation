@@ -21,7 +21,7 @@ export const UpcomingCourses = () => {
     },
   ];
   return (
-    <div className="m-2 md:my-8 flex flex-col justify-content-center ">
+    <div className="m-2 md:mt-20 flex flex-col justify-content-center ">
       <h3 className=" my-2 p-1 w-full font-bold bg-[#0095FF] leading-tight text-center text-white rounded-md">
         OUR UPCOMING COURSES :
       </h3>
