@@ -56,7 +56,25 @@ export const HomeDetails = () => {
         </div>
 
         <div className="mb-8">
-          <h3 className="text-xl font-semibold mb-2 text-teal-600">
+          <p>
+            Towhid Foundation officially began its activities on July 24, 2018,
+            and was registered by the Department of Social Services on November
+            15, 2018, under registration number Dh-09676. The foundation
+            commenced operations on December 1, 2018, initially functioning from
+            a temporary office at the founder's residence in Tolarbagh,
+            Mirpur-1, Dhaka. Currently, all activities are conducted from the
+            founder’s own establishment at 14, 15, 26/1 Dakshin Bishil,
+            Darussalam Road, Mirpur-1, Dhaka-1216, free of rent. The driving
+            force behind Towhid Foundation is Mr. Alhaj Mohammad Towhidul Islam,
+            a distinguished businessman, social worker, and philanthropist. His
+            vision and generosity enable the foundation to operate solely
+            through his personal donations, without accepting any external
+            funding from governmental, non-governmental, domestic, or
+            international sources. Committed to its mission of serving humanity,
+            Towhid Foundation exemplifies dedication and integrity in all its
+            endeavors.
+          </p>
+          {/* <h3 className="text-xl font-semibold mb-2 text-teal-600">
             Founding Date:
           </h3>
           <hr className="mb-2" />
@@ -110,7 +128,7 @@ export const HomeDetails = () => {
           <p>
             At Towhid Foundation, we remain committed to our mission of serving
             humanity with dedication and integrity.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
